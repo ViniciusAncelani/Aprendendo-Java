@@ -1,0 +1,25 @@
+/*Escreva um programa que imprime na tela a série de FIBONACCI até um numero dado. Esta séria
+começa com 1 e 1 e os próximos números são obtidos pela soma dos anteriores.
+Ex: 1 1 2 3 5 8 13 21 34 55*/
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main (String[] args){
+        
+        Scanner read = new Scanner(System.in);
+
+        System.out.println("Insira o último número");
+        int last = read.nextInt();
+
+        int a = 0, b = 1; 
+
+        System.out.println("A série de Fibonacci é: ");
+        while(a <= last){
+            System.out.print(a + " ");
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+    }
+}
