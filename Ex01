@@ -1,3 +1,6 @@
+Escreva um programa que dados 15 números, imprima seus quadrados, obs: você não precisa
+necessariamente imprimir no final. 
+
 import java.util.Scanner;
 
 public class Main {
