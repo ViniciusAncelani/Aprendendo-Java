@@ -1,0 +1,29 @@
+Escreva um programa que dados dois números, imprime o MDC 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro número: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Digite o segundo número: ");
+        int num2 = scanner.nextInt();
+
+        int a = num1;
+        int b = num2;
+
+        while (b != 0) {
+            int resto = a % b;
+            a = b;
+            b = resto;
+        }
+
+        System.out.println("O MDC de " + num1 + " e " + num2 + " é: " + Math.abs(a));
+
+        scanner.close();
+    }
+}
